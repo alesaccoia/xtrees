@@ -1,0 +1,17 @@
+#N canvas 109 242 450 300 10;
+#X obj 118 39 inlet;
+#X obj 238 39 inlet;
+#X obj 104 109 f;
+#X text 79 8 conditional inlet;
+#X text 221 10 message inlet;
+#X obj 195 194 route 1;
+#X obj 195 162 pack \$1 \$2;
+#X obj 195 231 outlet;
+#X obj 238 79 t b f;
+#X connect 0 0 2 1;
+#X connect 1 0 8 0;
+#X connect 2 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 0;
+#X connect 8 0 2 0;
+#X connect 8 1 6 1;

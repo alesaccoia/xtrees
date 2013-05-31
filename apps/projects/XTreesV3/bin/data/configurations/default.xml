@@ -1,0 +1,392 @@
+<useBackgroundImage>
+    <val_0>0.000000</val_0>
+</useBackgroundImage>
+<useInteractiveAudio>
+    <val_0>0.000000</val_0>
+</useInteractiveAudio>
+<soundVolume>
+    <val_0>48.333332</val_0>
+</soundVolume>
+<timedExhibit>
+    <val_0>1.000000</val_0>
+</timedExhibit>
+<showDuration>
+    <val_0>1.000000</val_0>
+</showDuration>
+<pastTweets>
+    <val_0>61.666668</val_0>
+</pastTweets>
+<backgroundR>
+    <val_0>0.000000</val_0>
+</backgroundR>
+<backgroundG>
+    <val_0>0.000000</val_0>
+</backgroundG>
+<backgroundB>
+    <val_0>0.000000</val_0>
+</backgroundB>
+<splashR>
+    <val_0>255.000000</val_0>
+</splashR>
+<splashG>
+    <val_0>255.000000</val_0>
+</splashG>
+<splashB>
+    <val_0>255.000000</val_0>
+</splashB>
+<growthMin>
+    <val_0>1700.000000</val_0>
+</growthMin>
+<growthMax>
+    <val_0>2350.000000</val_0>
+</growthMax>
+<minFrequency>
+    <val_0>2090.000000</val_0>
+</minFrequency>
+<maxFrequency>
+    <val_0>3858.888916</val_0>
+</maxFrequency>
+<webbyMin>
+    <val_0>7336.000000</val_0>
+</webbyMin>
+<webbyMax>
+    <val_0>7447.000000</val_0>
+</webbyMax>
+<treeR>
+    <val_0>255.000000</val_0>
+</treeR>
+<treeG>
+    <val_0>255.000000</val_0>
+</treeG>
+<treeB>
+    <val_0>255.000000</val_0>
+</treeB>
+<treeA>
+    <val_0>255.000000</val_0>
+</treeA>
+<branchWidth>
+    <val_0>26.294445</val_0>
+</branchWidth>
+<widthDecrease>
+    <val_0>79.650002</val_0>
+</widthDecrease>
+<branchLength>
+    <val_0>265.000000</val_0>
+</branchLength>
+<lengthDecrease>
+    <val_0>79.650002</val_0>
+</lengthDecrease>
+<minAngle>
+    <val_0>30.172222</val_0>
+</minAngle>
+<maxAngle>
+    <val_0>52.422226</val_0>
+</maxAngle>
+<fertility>
+    <val_0>5.000000</val_0>
+</fertility>
+<maxLevel>
+    <val_0>13.672222</val_0>
+</maxLevel>
+<shapeV1>
+    <val_0>0.000000</val_0>
+</shapeV1>
+<tLineR>
+    <val_0>247.916656</val_0>
+</tLineR>
+<tLineG>
+    <val_0>249.333328</val_0>
+</tLineG>
+<tLineB>
+    <val_0>249.333328</val_0>
+</tLineB>
+<tLineWidth>
+    <val_0>1.850000</val_0>
+</tLineWidth>
+<tweetMsgSize>
+    <val_0>17.666666</val_0>
+</tweetMsgSize>
+<tweetMsgR>
+    <val_0>255.000000</val_0>
+</tweetMsgR>
+<tweetMsgG>
+    <val_0>255.000000</val_0>
+</tweetMsgG>
+<tweetMsgB>
+    <val_0>255.000000</val_0>
+</tweetMsgB>
+<tweetUsR>
+    <val_0>243.666672</val_0>
+</tweetUsR>
+<tweetUsG>
+    <val_0>247.916656</val_0>
+</tweetUsG>
+<tweetUsB>
+    <val_0>245.083344</val_0>
+</tweetUsB>
+<showThumbs>
+    <val_0>0.000000</val_0>
+</showThumbs>
+<floatingSpeed>
+    <val_0>9.250000</val_0>
+</floatingSpeed>
+<crazyLineWidth>
+    <val_0>3.750000</val_0>
+</crazyLineWidth>
+<crazyCircleWidth>
+    <val_0>10.000000</val_0>
+</crazyCircleWidth>
+<jointsAreCircles>
+    <val_0>1.000000</val_0>
+</jointsAreCircles>
+<jointR>
+    <val_0>250.750000</val_0>
+</jointR>
+<jointG>
+    <val_0>11.333334</val_0>
+</jointG>
+<jointB>
+    <val_0>21.250000</val_0>
+</jointB>
+<jointThickness>
+    <val_0>2.950000</val_0>
+</jointThickness>
+<jointLength>
+    <val_0>2.666667</val_0>
+</jointLength>
+<value />
+<Configuration>prova2.xml</Configuration>
+<Background />
+<Soundtrack />
+<transformPosition>
+    <val_0>0.000000</val_0>
+    <val_1>0.000000</val_1>
+</transformPosition>
+<transformZ>
+    <val_0>0.000000</val_0>
+</transformZ>
+<transformAspect>
+    <val_0>0.000000</val_0>
+</transformAspect>
+<transformCenter>
+    <val_0>0.000000</val_0>
+</transformCenter>
+<transformMirrorX>
+    <val_0>0.000000</val_0>
+</transformMirrorX>
+<transformMirrorY>
+    <val_0>0.000000</val_0>
+</transformMirrorY>
+<transformEnableQuadWarper>
+    <val_0>0.000000</val_0>
+</transformEnableQuadWarper>
+<transformEditQuadWarper>
+    <val_0>0.000000</val_0>
+</transformEditQuadWarper>
+<transformSaveQuadWarper>
+    <val_0>0.000000</val_0>
+</transformSaveQuadWarper>
+<minColonization>
+    <val_0>27.400002</val_0>
+</minColonization>
+<treesOpacity>
+    <val_0>255.000000</val_0>
+</treesOpacity>
+<twitterOpacity>
+    <val_0>255.000000</val_0>
+</twitterOpacity>
+<splashOpacity>
+    <val_0>102.000000</val_0>
+</splashOpacity>
+<flowersOpacity>
+    <val_0>232.333328</val_0>
+</flowersOpacity>
+<showFlowers>
+    <val_0>1.000000</val_0>
+</showFlowers>
+<tLeavesR>
+    <val_0>255.000000</val_0>
+</tLeavesR>
+<tLeavesG>
+    <val_0>255.000000</val_0>
+</tLeavesG>
+<tLeavesB>
+    <val_0>255.000000</val_0>
+</tLeavesB>
+<leafLife>
+    <val_0>9666.666016</val_0>
+</leafLife>
+<leafFertility>
+    <val_0>10.000000</val_0>
+</leafFertility>
+<leafMinWidth>
+    <val_0>118.083328</val_0>
+</leafMinWidth>
+<leafMaxWidth>
+    <val_0>137.750000</val_0>
+</leafMaxWidth>
+<tweetMin>
+    <val_0>1000.000000</val_0>
+</tweetMin>
+<tweetMax>
+    <val_0>1633.333374</val_0>
+</tweetMax>
+<showLeaves>
+    <val_0>1.000000</val_0>
+</showLeaves>
+<leavesRows>
+    <val_0>3.322222</val_0>
+</leavesRows>
+<leavesColumns>
+    <val_0>5.327778</val_0>
+</leavesColumns>
+<leavesMinFreq>
+    <val_0>1765.000122</val_0>
+</leavesMinFreq>
+<leavesMaxFreq>
+    <val_0>2320.000000</val_0>
+</leavesMaxFreq>
+<leavesBloom>
+    <val_0>3.750000</val_0>
+</leavesBloom>
+<backgroundTransitionTime>
+    <val_0>1.000000</val_0>
+</backgroundTransitionTime>
+<treesFadeTime>
+    <val_0>39.349998</val_0>
+</treesFadeTime>
+<useTwilio>
+    <val_0>0.000000</val_0>
+</useTwilio>
+<twilioMsgSize>
+    <val_0>19.766666</val_0>
+</twilioMsgSize>
+<twilioMsgR>
+    <val_0>255.000000</val_0>
+</twilioMsgR>
+<twilioMsgG>
+    <val_0>8.500000</val_0>
+</twilioMsgG>
+<twilioMsgB>
+    <val_0>5.666667</val_0>
+</twilioMsgB>
+<twilioUsR>
+    <val_0>250.750000</val_0>
+</twilioUsR>
+<twilioUsG>
+    <val_0>252.166656</val_0>
+</twilioUsG>
+<twilioUsB>
+    <val_0>250.750000</val_0>
+</twilioUsB>
+<databaseMsgSize>
+    <val_0>18.444445</val_0>
+</databaseMsgSize>
+<databaseMsgR>
+    <val_0>252.166656</val_0>
+</databaseMsgR>
+<databaseMsgG>
+    <val_0>252.166656</val_0>
+</databaseMsgG>
+<databaseMsgB>
+    <val_0>255.000000</val_0>
+</databaseMsgB>
+<databaseUsR>
+    <val_0>253.583328</val_0>
+</databaseUsR>
+<databaseUsG>
+    <val_0>252.166656</val_0>
+</databaseUsG>
+<databaseUsB>
+    <val_0>250.750000</val_0>
+</databaseUsB>
+<tFlowersR>
+    <val_0>253.583328</val_0>
+</tFlowersR>
+<tFlowersG>
+    <val_0>253.583328</val_0>
+</tFlowersG>
+<tFlowersB>
+    <val_0>250.750000</val_0>
+</tFlowersB>
+<tFlowersLinesR>
+    <val_0>249.333328</val_0>
+</tFlowersLinesR>
+<tFlowersLinesG>
+    <val_0>255.000000</val_0>
+</tFlowersLinesG>
+<tFlowersLinesB>
+    <val_0>255.000000</val_0>
+</tFlowersLinesB>
+<tLeavesA>
+    <val_0>154.416656</val_0>
+</tLeavesA>
+<firstIterations>
+    <val_0>1.277778</val_0>
+</firstIterations>
+<waitSeedTime>
+    <val_0>13.000000</val_0>
+</waitSeedTime>
+<waitLinesTime>
+    <val_0>9.000000</val_0>
+</waitLinesTime>
+<startDetachingLeavesTime>
+    <val_0>7.333333</val_0>
+</startDetachingLeavesTime>
+<waitRegenerateTime>
+    <val_0>10.333334</val_0>
+</waitRegenerateTime>
+<leavesLife>
+    <val_0>16.477779</val_0>
+</leavesLife>
+<LinesMin>
+    <val_0>343.000031</val_0>
+</LinesMin>
+<LinesMax>
+    <val_0>676.000061</val_0>
+</LinesMax>
+<flowersMin>
+    <val_0>454.000000</val_0>
+</flowersMin>
+<flowersMax>
+    <val_0>731.500061</val_0>
+</flowersMax>
+<msgOpacity>
+    <val_0>0.000000</val_0>
+</msgOpacity>
+<minColonizationForLeaves>
+    <val_0>18.050001</val_0>
+</minColonizationForLeaves>
+<branchMinWidth>
+    <val_0>6.961111</val_0>
+</branchMinWidth>
+<splashFrequency>
+    <val_0>600.000000</val_0>
+</splashFrequency>
+<splashDuration>
+    <val_0>12.333334</val_0>
+</splashDuration>
+<eq100>
+    <val_0>30.000000</val_0>
+</eq100>
+<eq250>
+    <val_0>44.000000</val_0>
+</eq250>
+<eq700>
+    <val_0>50.000000</val_0>
+</eq700>
+<eq1500>
+    <val_0>50.000000</val_0>
+</eq1500>
+<eq3000>
+    <val_0>50.000000</val_0>
+</eq3000>
+<eq7000>
+    <val_0>50.000000</val_0>
+</eq7000>
+<eq15000>
+    <val_0>50.000000</val_0>
+</eq15000>
+<eqGain>
+    <val_0>50.000000</val_0>
+</eqGain>

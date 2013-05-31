@@ -1,0 +1,15 @@
+Updated Dec 23, 2011
+To build this app on osx, this directory has to be placed 2 directory levels deeper than the apps subdirectory of openframeworks v0.07, i.e
+of_preRelease_v007_osx/apps/projects/XTreesV3 
+
+
+The following addons have to be added to the openframeworks addon directory:
+ofxControlPanel
+ofxOsc
+ofxPd (little update necessary, will probably open a ticket in the pdlib forum)
+ofxDirList
+ofXmlSettings
+ofxAppUtils
+
+Some settings of the program are exposed in the data/settings.yml file
+

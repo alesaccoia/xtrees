@@ -1,0 +1,26 @@
+<positions>
+    <element name="Color Trigger">
+        <x>0.000000</x>
+        <y>770.000000</y>
+        <width>1024.000000</width>
+        <height>200.000000</height>
+    </element>
+    <element name="Keyframer A">
+        <x>0.000000</x>
+        <y>80.000000</y>
+        <width>1024.000000</width>
+        <height>200.000000</height>
+    </element>
+    <element name="Keyframer B">
+        <x>0.000000</x>
+        <y>310.000000</y>
+        <width>1024.000000</width>
+        <height>200.000000</height>
+    </element>
+    <element name="Keyframer C">
+        <x>0.000000</x>
+        <y>540.000000</y>
+        <width>1024.000000</width>
+        <height>200.000000</height>
+    </element>
+</positions>

@@ -1,0 +1,24 @@
+#N canvas 1094 390 586 315 10;
+#X obj 155 190 soundfiler;
+#X obj 29 23 inlet;
+#X obj 155 85 inlet;
+#X obj 28 160 outlet~;
+#X obj 52 129 outlet~;
+#X obj 149 240 table \$0-singleShotsampleR;
+#X obj 149 218 table \$0-singleShotsampleL;
+#X obj 29 68 tabplay~ \$0-singleShotsampleL;
+#X obj 51 46 tabplay~ \$0-singleShotsampleR;
+#X obj 274 45 loadbang;
+#X obj 273 74 f \$0;
+#X obj 155 116 pack s f;
+#X msg 155 149 read -resize \$1 \$2-singleShotsampleL \$2-singleShotsampleR
+;
+#X connect 1 0 7 0;
+#X connect 1 0 8 0;
+#X connect 2 0 11 0;
+#X connect 7 0 3 0;
+#X connect 8 0 4 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 1;
+#X connect 11 0 12 0;
+#X connect 12 0 0 0;

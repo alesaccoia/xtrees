@@ -1,0 +1,215 @@
+// !$*UTF8*$!
+{
+	3000D8EB145D1029009FC3EC /* PdReceiver.hpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {747, 481}}";
+			sepNavSelRange = "{447, 0}";
+			sepNavVisRange = "{62, 402}";
+		};
+	};
+	3000D8ED145D1029009FC3EC /* PdTypes.hpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 5174}}";
+			sepNavSelRange = "{734, 14}";
+			sepNavVisRange = "{59, 1595}";
+		};
+	};
+	30B2D0BF142B2C7A000AB5E1 /* AppCore.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 5720}}";
+			sepNavSelRange = "{2458, 12}";
+			sepNavVisRange = "{2046, 1618}";
+		};
+	};
+	30B2D0C0142B2C7A000AB5E1 /* AppCore.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 884}}";
+			sepNavSelRange = "{433, 10}";
+			sepNavVisRange = "{389, 1641}";
+		};
+	};
+	30B2D0C5142B2CA5000AB5E1 /* ofxPd.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 6123}}";
+			sepNavSelRange = "{14504, 48}";
+			sepNavVisRange = "{12992, 1940}";
+		};
+	};
+	E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = FAB9574915D17D740037119F /* ofxPdExample */;
+		activeTarget = E4B69B5A0A3A1756003C02F2 /* ofxPdExample */;
+		codeSenseManager = FAB9576415D17D920037119F /* Code sense */;
+		executables = (
+			FAB9574915D17D740037119F /* ofxPdExample */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					989,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 366050676;
+			PBXWorkspaceStateSaveDate = 366050676;
+		};
+		perUserProjectItems = {
+			FAB9575115D17D920037119F /* PBXTextBookmark */ = FAB9575115D17D920037119F /* PBXTextBookmark */;
+			FAB9579215D1807E0037119F /* PBXTextBookmark */ = FAB9579215D1807E0037119F /* PBXTextBookmark */;
+			FAB9579315D1807E0037119F /* PBXTextBookmark */ = FAB9579315D1807E0037119F /* PBXTextBookmark */;
+			FAB9581515D27ED70037119F /* PBXTextBookmark */ = FAB9581515D27ED70037119F /* PBXTextBookmark */;
+			FAB9581615D27ED70037119F /* PBXTextBookmark */ = FAB9581615D27ED70037119F /* PBXTextBookmark */;
+			FAB9581715D27ED70037119F /* PBXTextBookmark */ = FAB9581715D27ED70037119F /* PBXTextBookmark */;
+		};
+		sourceControlManager = FAB9576315D17D920037119F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	E4B69B5A0A3A1756003C02F2 /* ofxPdExample */ = {
+		activeExec = 0;
+		executables = (
+			FAB9574915D17D740037119F /* ofxPdExample */,
+		);
+	};
+	E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 650}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 713}";
+		};
+	};
+	E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {720, 1053}}";
+			sepNavSelRange = "{733, 0}";
+			sepNavVisRange = "{347, 432}";
+		};
+	};
+	E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 507}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{298, 610}";
+		};
+	};
+	FAB9574915D17D740037119F /* ofxPdExample */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ofxPdExample;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	FAB9575115D17D920037119F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4B69E1F0A3A1BDC003C02F2 /* testApp.h */;
+		name = "testApp.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 610;
+		vrLoc = 298;
+	};
+	FAB9576315D17D920037119F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	FAB9576415D17D920037119F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	FAB9579215D1807E0037119F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30B2D0C0142B2C7A000AB5E1 /* AppCore.h */;
+		name = "AppCore.h: 20";
+		rLen = 10;
+		rLoc = 433;
+		rType = 0;
+		vrLen = 1641;
+		vrLoc = 389;
+	};
+	FAB9579315D1807E0037119F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */;
+		name = "main.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 0;
+	};
+	FAB9581515D27ED70037119F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
+		name = "testApp.cpp: 23";
+		rLen = 9;
+		rLoc = 678;
+		rType = 0;
+		vrLen = 1428;
+		vrLoc = 776;
+	};
+	FAB9581615D27ED70037119F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30B2D0BF142B2C7A000AB5E1 /* AppCore.cpp */;
+		name = "AppCore.cpp: 201";
+		rLen = 0;
+		rLoc = 5602;
+		rType = 0;
+		vrLen = 1503;
+		vrLoc = 231;
+	};
+	FAB9581715D27ED70037119F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30B2D0BF142B2C7A000AB5E1 /* AppCore.cpp */;
+		name = "AppCore.cpp: 90";
+		rLen = 12;
+		rLoc = 2458;
+		rType = 0;
+		vrLen = 1618;
+		vrLoc = 2046;
+	};
+}

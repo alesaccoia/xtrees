@@ -1,0 +1,2436 @@
+#N canvas 0 22 1680 827 10;
+#X obj -27 228 loadbang;
+#X obj 52 334 tgl 25 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+0 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+0 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+0 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 30 558 pd chan;
+#N canvas 273 445 777 605 freevr 0;
+#X text 224 6 ARGUMENTS:;
+#X text 263 302 OUTLETS:;
+#X text 254 337 EXAMPLES:;
+#X text 270 255 INLETS:;
+#X text 301 11 stereo reverb using the Schroeder/Moorer model;
+#X text 337 281 Right: audio input for the right channel.;
+#X text 337 255 Left: audio input for the left channel and message
+input for settings messages.;
+#X text 337 302 Signal: the two outlets are the left and right channels
+of a stereo output pair.;
+#X obj 139 405 freeverb~;
+#X msg 48 204 roomsize \$1;
+#X msg 48 226 damping \$1;
+#X msg 48 248 width \$1;
+#X msg 189 196 wet \$1;
+#X msg 48 292 dry \$1;
+#X msg 48 314 print;
+#X msg 48 336 freeze \$1;
+#X msg 48 358 bypass \$1;
+#X text 363 148 - print the current values of the above parameters
+;
+#X text 376 171 - start/stop freeze of reverb tail \, using 1 or 0
+;
+#X text 380 192 - bypass the reverb processing \, using a 1 or 0;
+#X text 361 126 - level of unprocessed signal \, between 0 and 1 (default:
+0);
+#X text 365 105 - level of reverbed signal \, between 0 and 1 (default:
+0.3);
+#X text 387 60 - amount of damping of room's surfaces (default: 0.5)
+;
+#X text 369 84 - stereo width of reverb (default: 1);
+#X text 391 38 - size of the room to be simulated (default=0.85);
+#X obj 56 35 inlet~;
+#X obj 104 102 hsl 66 8 0 1 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 4550 1;
+#X obj 168 102 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 198 502 throw~ sumL;
+#X obj 279 501 throw~ sumR;
+#X obj 200 482 *~;
+#X obj 281 480 *~;
+#X obj 104 136 hsl 37 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1800 1;
+#X obj 145 136 hsl 37 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2520 1;
+#X msg 303 409 0.5;
+#X msg 384 359 0.7;
+#X obj 402 437 loadbang;
+#X obj 107 115 hsl 37 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2520 1;
+#X text 141 120 rever;
+#X obj 272 145 noise~;
+#X obj 272 170 *~ 1e-07;
+#X connect 8 0 30 0;
+#X connect 8 1 31 0;
+#X connect 9 0 8 0;
+#X connect 10 0 8 0;
+#X connect 11 0 8 0;
+#X connect 12 0 8 0;
+#X connect 13 0 8 0;
+#X connect 14 0 8 0;
+#X connect 15 0 8 0;
+#X connect 16 0 8 0;
+#X connect 25 0 8 0;
+#X connect 25 0 8 1;
+#X connect 26 0 9 0;
+#X connect 27 0 15 0;
+#X connect 30 0 28 0;
+#X connect 31 0 29 0;
+#X connect 32 0 30 1;
+#X connect 33 0 31 1;
+#X connect 34 0 32 0;
+#X connect 35 0 33 0;
+#X connect 35 0 37 0;
+#X connect 35 0 26 0;
+#X connect 36 0 35 0;
+#X connect 36 0 34 0;
+#X connect 37 0 12 0;
+#X connect 39 0 40 0;
+#X connect 40 0 8 1;
+#X connect 40 0 8 0;
+#X coords 0 -1 1 1 85 45 2 100 100;
+#X restore 1623 383 pd freevr;
+#N canvas 149 87 580 551 delay 0;
+#X floatatom 154 103 4 0 999 0 - - -;
+#X text 91 205 <-- delay time;
+#X text 56 240 read from delay line;
+#X text 47 160 write to delay line;
+#X obj 25 285 +~;
+#X obj 34 175 delwrite~ delay1 1000;
+#X text 107 30 test signal to delay;
+#X text 124 219 (msec);
+#X obj 31 140 inlet~;
+#X obj 154 55 inlet;
+#X obj 19 236 *~;
+#X obj 105 122 hsl 45 11 0 1 0 0 empty empty empty -2 -8 0 10 -262130
+-1 -1 3080 1;
+#X obj 105 109 hsl 45 11 40 1000 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 1650 1;
+#X text 100 96 dly;
+#X obj 157 453 throw~ sumL;
+#X obj 238 450 throw~ sumR;
+#X text 154 119 time;
+#X text 152 126 fb;
+#X obj 18 372 *~;
+#X obj 99 370 *~;
+#X obj 109 137 hsl 37 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1800 1;
+#X obj 122 148 hsl 37 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2520 1;
+#X msg 121 299 0.5;
+#X msg 160 299 0.7;
+#X msg 271 124 400;
+#X obj 220 327 loadbang;
+#X obj 17 429 outlet~;
+#X obj 83 418 outlet~;
+#X obj 51 259 vd~ delay1;
+#X obj 191 203 line~;
+#X msg 192 180 \$1 50;
+#X obj 292 36 noise~;
+#X obj 284 68 *~ 1e-06;
+#X connect 0 0 30 0;
+#X connect 4 0 18 0;
+#X connect 4 0 19 0;
+#X connect 8 0 5 0;
+#X connect 9 0 0 0;
+#X connect 10 0 5 0;
+#X connect 11 0 10 1;
+#X connect 12 0 0 0;
+#X connect 18 0 14 0;
+#X connect 19 0 15 0;
+#X connect 20 0 18 1;
+#X connect 21 0 19 1;
+#X connect 22 0 20 0;
+#X connect 23 0 21 0;
+#X connect 23 0 11 0;
+#X connect 24 0 12 0;
+#X connect 25 0 24 0;
+#X connect 25 0 23 0;
+#X connect 25 0 22 0;
+#X connect 28 0 4 1;
+#X connect 28 0 10 0;
+#X connect 29 0 28 0;
+#X connect 30 0 29 0;
+#X connect 31 0 32 0;
+#X connect 32 0 5 0;
+#X coords 0 -1 1 1 85 60 2 100 100;
+#X restore 1528 370 pd delay;
+#N canvas 1 52 810 370 masteri 0;
+#X obj 296 183 dac~;
+#N canvas 152 62 495 534 record 0;
+#X obj 83 253 writesf~ 2;
+#X obj 77 17 inlet~;
+#X obj 124 17 inlet~;
+#X msg 236 143 start;
+#X msg 279 143 stop;
+#X obj 238 56 select 1 0;
+#X obj 237 25 r rec;
+#X msg 212 324 \; rec_in color 13;
+#X msg 212 284 \; rec_in color 16;
+#X msg 325 188 open -bytes 3 \$1;
+#X obj 325 157 savepanel;
+#X obj 318 219 t b a;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 10 0;
+#X connect 5 1 4 0;
+#X connect 5 1 7 0;
+#X connect 6 0 5 0;
+#X connect 9 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 3 0;
+#X connect 11 0 8 0;
+#X connect 11 1 0 0;
+#X restore 276 -5 pd record;
+#X obj 104 104 tgl 30 0 rec rec_in rec 7 7 0 10 -258699 -1 -262144
+0 1;
+#X obj 188 109 vu 15 80 empty empty 35 8 0 8 -66577 -1 1 0;
+#X obj 165 -68 inlet~;
+#X obj 211 -68 inlet~;
+#X obj 213 24 env~;
+#X obj 213 46 - 100;
+#X obj 211 67 spigot;
+#X obj 148 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 254 24 env~;
+#X obj 254 46 - 100;
+#X obj 252 67 spigot;
+#X obj 223 -2 *~;
+#X obj 248 -2 *~;
+#X obj 165 109 vsl 19 77 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 7600 1;
+#X obj 52 -41 loadbang;
+#X msg 51 -1 1;
+#X obj 17 49 r main;
+#X floatatom 60 49 5 0 0 0 - - -;
+#X floatatom 117 -54 5 0 0 0 - - -;
+#X text 106 144 master;
+#X text 299 112 servandobarreiro.es;
+#X text 300 125 servando.hotglue.me;
+#X text 415 -41 this is the "master" section. All the signals from
+the channels end up here. the rec toggle allows you to record in a
+soundfile the results of your "performance". white fader is the master
+fader;
+#X connect 4 0 1 0;
+#X connect 4 0 13 0;
+#X connect 5 0 1 1;
+#X connect 5 0 14 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 3 0;
+#X connect 9 0 8 1;
+#X connect 9 0 12 1;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 3 1;
+#X connect 13 0 6 0;
+#X connect 13 0 0 0;
+#X connect 14 0 10 0;
+#X connect 14 0 0 1;
+#X connect 15 0 13 1;
+#X connect 15 0 14 1;
+#X connect 16 0 17 0;
+#X connect 17 0 15 0;
+#X connect 18 0 15 0;
+#X connect 19 0 15 0;
+#X connect 20 0 14 1;
+#X connect 20 0 13 1;
+#X coords 0 -1 1 1 129 100 2 100 100;
+#X restore 1637 668 pd masteri;
+#X obj 1528 351 catch~ aux1;
+#X obj 1624 365 catch~ aux2;
+#N canvas 57 213 979 604 filtmog 0;
+#X obj 401 255 moog~;
+#X floatatom 191 111 4 0 0 0 - - -;
+#X floatatom 436 131 5 0 0 0 - - -;
+#X obj 447 294 env~;
+#X floatatom 447 314 5 0 0 0 - - -;
+#X msg 135 257 reset;
+#X obj 379 132 +~ 1;
+#X floatatom 188 128 5 0 0 1 - - -;
+#X floatatom 456 165 5 0 0 0 - - -;
+#X obj 398 182 +~ 100;
+#X obj 365 103 osc~ 0.25;
+#X obj 390 154 *~ 2000;
+#X obj 456 218 sig~ 3;
+#X text 222 111 Q (1-4);
+#X obj 467 107 * 100;
+#X floatatom 189 96 5 0 0 0 - - -;
+#X obj 484 144 * 100;
+#X floatatom 447 69 4 0 0 0 - - -;
+#X obj 388 315 outlet~;
+#X obj 11 107 inlet~;
+#X obj 124 213 bng 15 250 50 0 empty empty empty 17 7 0 10 -260097
+-1 -1;
+#X floatatom 69 157 5 0 0 0 - - -;
+#X obj 106 124 hsl 75 8 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 106 103 hsl 75 8 0 127 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 0 1;
+#X obj 106 113 hsl 75 8 0 5 0 0 empty empty q -2 4 0 10 -4034 -1 -1
+3700 1;
+#X obj 437 47 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 20 18 loadbang;
+#X msg 23 40 2.5;
+#X text 106 128 resofiltring;
+#X obj 42 253 r osc2;
+#X obj 43 275 * 100;
+#X obj 117 23 inlet;
+#X obj 202 25 inlet;
+#X obj 124 49 * 100;
+#X obj 208 327 throw~ sumL;
+#X obj 289 326 throw~ sumR;
+#X connect 0 0 3 0;
+#X connect 0 0 18 0;
+#X connect 0 0 35 0;
+#X connect 0 0 34 0;
+#X connect 1 0 12 0;
+#X connect 1 0 21 0;
+#X connect 2 0 11 1;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;
+#X connect 6 0 11 0;
+#X connect 7 0 10 0;
+#X connect 8 0 9 1;
+#X connect 9 0 0 1;
+#X connect 10 0 6 0;
+#X connect 11 0 9 0;
+#X connect 12 0 0 2;
+#X connect 14 0 2 0;
+#X connect 15 0 14 0;
+#X connect 16 0 8 0;
+#X connect 17 0 16 0;
+#X connect 19 0 0 0;
+#X connect 20 0 5 0;
+#X connect 22 0 7 0;
+#X connect 23 0 15 0;
+#X connect 24 0 1 0;
+#X connect 25 0 17 0;
+#X connect 26 0 27 0;
+#X connect 27 0 24 0;
+#X connect 29 0 30 0;
+#X connect 31 0 33 0;
+#X connect 32 0 22 0;
+#X connect 33 0 23 0;
+#X coords 0 -1 1 1 85 45 2 100 100;
+#X restore 1724 388 pd filtmog;
+#X obj 1613 612 catch~ sumL;
+#X obj 1732 617 catch~ sumR;
+#X obj 1724 369 catch~ aux3;
+#X obj 1598 334 bng 25 250 50 0 empty empty empty 17 7 0 10 -159808
+-1 -1;
+#X obj 1748 335 bng 25 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 1673 335 bng 25 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 94 530 line;
+#X obj 1786 222 bng 25 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 1752 254 catch~ aux4;
+#X text 27 748 START ATMOSPHERE;
+#X obj 127 405 tgl 25 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 218 522 line;
+#X msg -25 295 PianoIntro1.wav \, PianoIntro2.wav \, PianoIntro3.wav
+;
+#X msg 232 408 Chimes1.wav \, Chimes2.wav \, Chimes3.wav;
+#X obj 241 34 loadbang;
+#X obj 835 177 DrunkDroneStraight;
+#X obj 833 130 loadbang;
+#X msg 834 151 DMXNoises1.wav;
+#X obj 833 277 loadbang;
+#X msg 834 298 Chimes1.wav;
+#X obj 421 266 loadbang;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+0 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+0 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+1900 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 130 558 pd chan;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+0 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+1700 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+2500 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 230 558 pd chan;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+0 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+1000 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+1000 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 330 558 pd chan;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+0 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+0 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+4500 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 425 559 pd chan;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+0 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 0 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+1400 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+2300 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 520 558 pd chan;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+2900 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+0 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+0 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 780 558 pd chan;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+1700 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+500 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+1600 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 880 558 pd chan;
+#X text 157 748 CHIMES;
+#X text 232 748 STRAIGHT LOGAN;
+#X obj 126 434 stereoSamplerAleatory 10000;
+#X text 161 452 TODO MORE SAMPLES;
+#X obj 232 382 loadbang;
+#X msg 1135 154 8;
+#X obj 243 76 DrunkDroneStraight;
+#X obj 834 327 DrunkDroneStraight;
+#X text 427 748 DMX DRUNK;
+#X text 341 748 VOICES;
+#X msg 523 52 2;
+#X text 517 748 CHIMES LOW;
+#X msg 1127 301 3;
+#X text 897 748 BRANCHES;
+#X obj 297 530 line;
+#X obj 488 530 line;
+#X obj 588 530 line;
+#X obj 848 530 line;
+#X obj 848 510 r simulOff;
+#X obj 948 530 line;
+#X obj 948 510 r simulOff;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+700 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+1900 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+1700 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+5600 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 980 558 pd chan;
+#X obj 1048 530 line;
+#X obj 1048 510 r simulOff;
+#X text 997 748 LEAVES;
+#X obj 1217 356 polySamplerStereo;
+#X msg 1318 295 2000 0;
+#X obj 1260 187 polySamplerStereo;
+#X obj 1257 126 r newBranch;
+#X obj 1216 283 r newLeaf;
+#X msg 1286 153 2000 0;
+#X obj 1387 77 loadbang;
+#X obj 1295 267 loadbang;
+#X obj 5 314 stereoSamplerX 7000;
+#X text 807 748 SEEDS;
+#X obj 1357 773 polySamplerStereo;
+#X obj 1435 684 loadbang;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+3000 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+1200 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+200 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 1080 558 pd chan;
+#X obj 1148 530 line;
+#X obj 1148 510 r simulOff;
+#X text 1097 748 BREATHE;
+#X msg 1309 743 Breath1Stereo.wav \, Breath2Stereo.wav \, Breath3Stereo.wav
+;
+#X msg 1458 712 10000 0;
+#X obj 458 148 loadbang;
+#N canvas 298 175 683 701 chan 0;
+#X obj 103 183 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 123 184 vsl 25 90 0 1 0 1 m1 m1r empty 0 -8 0 8 -191407 -1 -1
+0 1;
+#X obj 17 261 inlet~;
+#X obj 34 358 *~;
+#X obj 111 168 hsl 72 8 0 -1 0 1 m6 m6r empty -2 -6 0 8 -262144 -1
+-1 3000 1;
+#X obj 35 413 *~;
+#X obj 77 412 *~;
+#X obj 35 384 + 1;
+#X obj 60 384 * -1;
+#X obj 19 311 spigot~;
+#X obj 136 372 *~;
+#X obj 165 371 *~;
+#X obj 68 358 *~;
+#X obj 60 260 inlet~;
+#X obj 70 312 spigot~;
+#X obj 192 180 env~;
+#X obj 192 202 - 100;
+#X obj 190 223 spigot;
+#X obj 233 180 env~;
+#X obj 233 202 - 100;
+#X obj 231 223 spigot;
+#X obj 152 183 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X obj 103 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 103 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 196 vu 12 80 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 193 372 *~;
+#X obj 222 371 *~;
+#X obj 138 404 throw~ aux1;
+#X obj 152 429 throw~ aux2;
+#X obj 217 402 throw~ aux3;
+#X obj 232 426 throw~ aux4;
+#X obj 50 289 spigot~;
+#X obj 174 106 tgl 11 0 empty empty m 2 7 0 10 -262144 -1 -1 0 1;
+#X obj 35 438 throw~ sumL;
+#X obj 77 458 throw~ sumR;
+#X text 80 55 servandobarreiro.es;
+#X text 75 71 servando.hotglue.me;
+#X obj 280 89 tgl 15 0 empty empty mt 2 7 0 10 -260097 -1 -1 0 1;
+#X obj 640 107 tgl 12 0 empty empty vu 2 7 0 10 -4034 -1 -1 0 1;
+#X text 295 26 this is a simple mono/stereo "modular" channel \, it
+can be duplicated and modified \, It sends automatically the audio
+to the "master section". The potentiometers send a variable signal
+to the effects. (color coded) the white h slider is the "panorama"
+\, the orange toggle is the mute button and the white ones are busses
+(1-4) \, the grey vfader sends signal to the "master" and the green
+toggle enables you to visualize the amount of signal that you are sending
+out to the master. the M toggle in the top right corner just duplicates
+the signal from l to R chan (for mono inputs);
+#X text 338 186 busses can also be used to send signal to effects or
+multichannel soundcards or for "pre-fader listening";
+#X obj 227 136 inlet;
+#X obj 111 124 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -159808 -1 -1
+1900 1;
+#X obj 111 134 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -257985 -1 -1
+2200 1;
+#X obj 111 144 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -258113 -1 -1
+0 1;
+#X obj 111 154 hsl 72 8 0 1 0 1 m6 m6r empty -2 -6 0 8 -4034 -1 -1
+0 1;
+#X connect 0 0 9 1;
+#X connect 0 0 14 1;
+#X connect 1 0 3 1;
+#X connect 1 0 12 1;
+#X connect 2 0 9 0;
+#X connect 2 0 33 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 27 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 15 0;
+#X connect 5 0 35 0;
+#X connect 6 0 18 0;
+#X connect 6 0 36 0;
+#X connect 7 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 12 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 28 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 17 0 26 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 26 1;
+#X connect 21 0 20 1;
+#X connect 21 0 17 1;
+#X connect 27 0 31 0;
+#X connect 28 0 32 0;
+#X connect 33 1 14 0;
+#X connect 34 0 33 1;
+#X connect 43 0 1 0;
+#X connect 44 0 10 1;
+#X connect 45 0 11 1;
+#X connect 46 0 27 1;
+#X connect 47 0 28 1;
+#X coords 0 -1 1 1 95 180 2 100 100;
+#X restore 619 560 pd chan;
+#X obj 687 532 line;
+#X text 636 750 LINES;
+#N canvas 653 274 1027 682 timeline 1;
+#X obj 201 65 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 465 64 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 545 64 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 625 64 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 705 64 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 121 65 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 453 19 LEAVES ON;
+#X text 533 19 LEAVES OFF;
+#X text 693 19 LINES OFF;
+#X text 110 20 SIMUL ON;
+#X obj 119 39 r simulOn;
+#X obj 200 39 r simulOff;
+#X text 199 20 SIMUL OFF;
+#X obj 455 39 r leavesOn;
+#X obj 538 39 r leavesOff;
+#X text 613 19 LINES ON;
+#X obj 620 38 r linesOn;
+#X obj 703 38 r linesOff;
+#N canvas 738 586 848 343 stateSimulOn 0;
+#X obj 115 245 s chimes_v;
+#X obj 213 245 s mainPad_v;
+#X obj 308 244 s growthSamples_v;
+#X obj 432 245 s randomNoises_v;
+#X obj 640 245 s linesPad_v;
+#X obj 401 140 inlet;
+#X obj 115 53 s chimes_on;
+#X obj 213 53 s mainPad_on;
+#X obj 308 52 s growthSamples_on;
+#X obj 432 53 s randomNoises_on;
+#X obj 640 53 s linesPad_on;
+#X obj 548 245 s chimesLow_v;
+#X obj 548 53 s chimesLow_on;
+#X obj 35 245 s piano_v;
+#X obj 35 53 s piano_on;
+#X msg 35 79 0;
+#X msg 115 79 1;
+#X msg 35 202 0 3000;
+#X msg 213 79 1;
+#X msg 308 80 1;
+#X msg 432 82 1;
+#X msg 549 85 1;
+#X obj 153 152 del 3000;
+#X msg 432 203 1 10000;
+#X msg 212 203 0.7 10000;
+#X msg 115 202 0.5 10000;
+#X msg 545 202 0.2 20000;
+#X msg 308 203 0.45 10000;
+#X connect 5 0 25 0;
+#X connect 5 0 24 0;
+#X connect 5 0 27 0;
+#X connect 5 0 23 0;
+#X connect 5 0 17 0;
+#X connect 5 0 15 0;
+#X connect 5 0 16 0;
+#X connect 5 0 18 0;
+#X connect 5 0 19 0;
+#X connect 5 0 20 0;
+#X connect 5 0 26 0;
+#X connect 5 0 21 0;
+#X connect 15 0 14 0;
+#X connect 16 0 6 0;
+#X connect 17 0 13 0;
+#X connect 18 0 7 0;
+#X connect 19 0 8 0;
+#X connect 20 0 9 0;
+#X connect 21 0 12 0;
+#X connect 23 0 3 0;
+#X connect 24 0 1 0;
+#X connect 25 0 0 0;
+#X connect 26 0 11 0;
+#X connect 27 0 2 0;
+#X restore 119 149 pd stateSimulOn;
+#N canvas 572 445 848 343 stateSimulOff 0;
+#X obj 115 245 s chimes_v;
+#X obj 213 245 s mainPad_v;
+#X obj 308 244 s growthSamples_v;
+#X obj 432 245 s randomNoises_v;
+#X obj 640 245 s linesPad_v;
+#X obj 401 140 inlet;
+#X obj 115 53 s chimes_on;
+#X obj 213 53 s mainPad_on;
+#X obj 308 52 s growthSamples_on;
+#X obj 432 53 s randomNoises_on;
+#X obj 640 53 s linesPad_on;
+#X obj 548 245 s chimesLow_v;
+#X obj 548 53 s chimesLow_on;
+#X obj 35 245 s piano_v;
+#X obj 35 53 s piano_on;
+#X msg 35 202 1 10000;
+#X msg 115 202 0 3000;
+#X msg 212 203 0 3000;
+#X msg 308 203 0 3000;
+#X msg 432 203 0 3000;
+#X msg 546 202 0 3000;
+#X msg 35 79 1;
+#X msg 115 79 0;
+#X msg 213 79 0;
+#X msg 308 80 0;
+#X msg 432 82 0;
+#X msg 549 85 0;
+#X connect 5 0 16 0;
+#X connect 5 0 17 0;
+#X connect 5 0 18 0;
+#X connect 5 0 19 0;
+#X connect 5 0 15 0;
+#X connect 5 0 21 0;
+#X connect 5 0 22 0;
+#X connect 5 0 23 0;
+#X connect 5 0 24 0;
+#X connect 5 0 25 0;
+#X connect 5 0 20 0;
+#X connect 5 0 26 0;
+#X connect 15 0 13 0;
+#X connect 16 0 0 0;
+#X connect 17 0 1 0;
+#X connect 18 0 2 0;
+#X connect 19 0 3 0;
+#X connect 20 0 11 0;
+#X connect 21 0 14 0;
+#X connect 22 0 6 0;
+#X connect 23 0 7 0;
+#X connect 24 0 8 0;
+#X connect 25 0 9 0;
+#X connect 26 0 12 0;
+#X restore 199 185 pd stateSimulOff;
+#X obj 389 66 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 388 40 r msgOn;
+#X text 387 21 MSG ON;
+#X obj 282 64 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 282 39 r readytoRegen;
+#N canvas 235 635 848 343 readytoRegen 0;
+#X obj 115 245 s chimes_v;
+#X obj 213 245 s mainPad_v;
+#X obj 308 244 s growthSamples_v;
+#X obj 432 245 s randomNoises_v;
+#X obj 640 245 s linesPad_v;
+#X obj 401 140 inlet;
+#X obj 115 53 s chimes_on;
+#X obj 213 53 s mainPad_on;
+#X obj 308 52 s growthSamples_on;
+#X obj 432 53 s randomNoises_on;
+#X obj 640 53 s linesPad_on;
+#X obj 548 245 s chimesLow_v;
+#X obj 548 53 s chimesLow_on;
+#X obj 35 245 s piano_v;
+#X obj 35 53 s piano_on;
+#X msg 548 81 0;
+#X msg 213 79 0;
+#X msg 308 80 0;
+#X msg 432 82 0;
+#X msg 212 203 0 3000;
+#X msg 308 203 0 3000;
+#X msg 432 203 0 3000;
+#X connect 5 0 15 0;
+#X connect 5 0 16 0;
+#X connect 5 0 17 0;
+#X connect 5 0 18 0;
+#X connect 5 0 19 0;
+#X connect 5 0 20 0;
+#X connect 5 0 21 0;
+#X connect 15 0 12 0;
+#X connect 16 0 7 0;
+#X connect 17 0 8 0;
+#X connect 18 0 9 0;
+#X connect 19 0 1 0;
+#X connect 20 0 2 0;
+#X connect 21 0 3 0;
+#X restore 282 222 pd readytoRegen;
+#N canvas 290 144 848 343 msgOn 1;
+#X obj 115 245 s chimes_v;
+#X obj 213 245 s mainPad_v;
+#X obj 308 244 s growthSamples_v;
+#X obj 432 245 s randomNoises_v;
+#X obj 640 245 s linesPad_v;
+#X obj 401 140 inlet;
+#X obj 115 53 s chimes_on;
+#X obj 213 53 s mainPad_on;
+#X obj 308 52 s growthSamples_on;
+#X obj 432 53 s randomNoises_on;
+#X obj 640 53 s linesPad_on;
+#X obj 548 245 s chimesLow_v;
+#X obj 548 53 s chimesLow_on;
+#X obj 35 245 s piano_v;
+#X obj 35 53 s piano_on;
+#X msg 547 203 0 3000;
+#X msg 637 203 0 3000;
+#X msg 35 202 0 3000;
+#X msg 548 80 0;
+#X msg 672 82 0;
+#X msg 35 79 0;
+#X msg 115 79 1;
+#X msg 213 79 1;
+#X msg 308 80 1;
+#X msg 432 82 1;
+#X text 545 24 these are still goin;
+#X text 525 224 these are still goin;
+#X msg 432 203 1 10000;
+#X msg 212 203 0.7 10000;
+#X msg 115 202 0.5 10000;
+#X msg 308 203 0.45 10000;
+#X connect 5 0 21 0;
+#X connect 5 0 22 0;
+#X connect 5 0 23 0;
+#X connect 5 0 24 0;
+#X connect 5 0 29 0;
+#X connect 5 0 28 0;
+#X connect 5 0 30 0;
+#X connect 5 0 27 0;
+#X connect 21 0 6 0;
+#X connect 22 0 7 0;
+#X connect 23 0 8 0;
+#X connect 24 0 9 0;
+#X connect 27 0 3 0;
+#X connect 28 0 1 0;
+#X connect 29 0 0 0;
+#X connect 30 0 2 0;
+#X restore 388 251 pd msgOn;
+#N canvas 674 121 848 343 leavesOn 0;
+#X obj 115 245 s chimes_v;
+#X obj 213 245 s mainPad_v;
+#X obj 308 244 s growthSamples_v;
+#X obj 432 245 s randomNoises_v;
+#X obj 640 245 s linesPad_v;
+#X obj 401 140 inlet;
+#X obj 115 53 s chimes_on;
+#X obj 213 53 s mainPad_on;
+#X obj 308 52 s growthSamples_on;
+#X obj 432 53 s randomNoises_on;
+#X obj 640 53 s linesPad_on;
+#X obj 548 245 s chimesLow_v;
+#X obj 548 53 s chimesLow_on;
+#X obj 35 245 s piano_v;
+#X obj 35 53 s piano_on;
+#X msg 115 79 0;
+#X msg 213 79 0;
+#X msg 308 80 0;
+#X msg 432 82 0;
+#X msg 115 202 0 3000;
+#X msg 212 203 0 3000;
+#X msg 308 203 0 3000;
+#X msg 432 203 0 3000;
+#X connect 5 0 16 0;
+#X connect 5 0 20 0;
+#X connect 15 0 6 0;
+#X connect 16 0 7 0;
+#X connect 17 0 8 0;
+#X connect 18 0 9 0;
+#X connect 19 0 0 0;
+#X connect 20 0 1 0;
+#X connect 21 0 2 0;
+#X connect 22 0 3 0;
+#X restore 465 219 pd leavesOn;
+#N canvas 400 500 848 343 linesOn 0;
+#X obj 115 245 s chimes_v;
+#X obj 213 245 s mainPad_v;
+#X obj 308 244 s growthSamples_v;
+#X obj 432 245 s randomNoises_v;
+#X obj 640 245 s linesPad_v;
+#X obj 401 140 inlet;
+#X obj 115 53 s chimes_on;
+#X obj 213 53 s mainPad_on;
+#X obj 308 52 s growthSamples_on;
+#X obj 432 53 s randomNoises_on;
+#X obj 640 53 s linesPad_on;
+#X obj 548 245 s chimesLow_v;
+#X obj 548 53 s chimesLow_on;
+#X obj 35 245 s piano_v;
+#X obj 35 53 s piano_on;
+#X msg 547 203 0 3000;
+#X msg 35 202 0 3000;
+#X msg 548 80 0;
+#X msg 35 79 0;
+#X msg 213 79 1;
+#X msg 432 82 1;
+#X text 545 24 these are still goin;
+#X msg 212 203 1 10000;
+#X msg 432 203 0.23 10000;
+#X text 525 224 these are still goin;
+#X msg 115 202 0 3000;
+#X msg 308 203 0 3000;
+#X msg 308 80 0;
+#X msg 115 79 0;
+#X msg 672 82 1;
+#X msg 637 203 1 3000;
+#X connect 5 0 30 0;
+#X connect 5 0 29 0;
+#X connect 5 0 25 0;
+#X connect 5 0 26 0;
+#X connect 5 0 27 0;
+#X connect 5 0 28 0;
+#X connect 5 0 17 0;
+#X connect 17 0 12 0;
+#X connect 19 0 7 0;
+#X connect 20 0 9 0;
+#X connect 22 0 1 0;
+#X connect 23 0 3 0;
+#X connect 25 0 0 0;
+#X connect 26 0 2 0;
+#X connect 27 0 8 0;
+#X connect 28 0 6 0;
+#X connect 29 0 10 0;
+#X connect 30 0 4 0;
+#X restore 626 218 pd linesOn;
+#N canvas 707 492 848 343 linesOff 0;
+#X obj 115 245 s chimes_v;
+#X obj 213 245 s mainPad_v;
+#X obj 308 244 s growthSamples_v;
+#X obj 432 245 s randomNoises_v;
+#X obj 640 245 s linesPad_v;
+#X obj 401 140 inlet;
+#X obj 115 53 s chimes_on;
+#X obj 213 53 s mainPad_on;
+#X obj 308 52 s growthSamples_on;
+#X obj 432 53 s randomNoises_on;
+#X obj 640 53 s linesPad_on;
+#X obj 548 245 s chimesLow_v;
+#X obj 548 53 s chimesLow_on;
+#X obj 35 245 s piano_v;
+#X obj 35 53 s piano_on;
+#X msg 35 202 0 3000;
+#X msg 672 82 0;
+#X msg 35 79 0;
+#X msg 213 79 1;
+#X msg 432 82 1;
+#X text 99 25 these are still goin;
+#X text 101 224 these are still goin;
+#X msg 115 202 0 3000;
+#X msg 115 79 0;
+#X msg 637 203 0 5000;
+#X obj 674 114 del 5000;
+#X msg 212 203 0 3000;
+#X msg 432 203 0.1 3000;
+#X msg 308 203 0.2 3000;
+#X connect 5 0 25 0;
+#X connect 5 0 24 0;
+#X connect 5 0 27 0;
+#X connect 5 0 28 0;
+#X connect 5 0 26 0;
+#X connect 5 0 22 0;
+#X connect 5 0 18 0;
+#X connect 5 0 19 0;
+#X connect 5 0 23 0;
+#X connect 16 0 10 0;
+#X connect 18 0 7 0;
+#X connect 19 0 9 0;
+#X connect 22 0 0 0;
+#X connect 23 0 6 0;
+#X connect 24 0 4 0;
+#X connect 25 0 16 0;
+#X connect 26 0 1 0;
+#X connect 27 0 3 0;
+#X connect 28 0 2 0;
+#X restore 710 216 pd linesOff;
+#X text 280 19 READY TO REGEN;
+#X text 134 241 all leaves have fallen or the trees are anyway ready
+to regenerate pretty much silence;
+#X obj 37 60 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 35 15 START;
+#X obj 36 35 r start;
+#X obj 29 290 s piano_on;
+#X msg 30 265 1;
+#X obj 78 378 s piano_v;
+#X msg 77 347 1 10000;
+#X connect 0 0 19 0;
+#X connect 1 0 27 0;
+#X connect 3 0 28 0;
+#X connect 4 0 29 0;
+#X connect 5 0 18 0;
+#X connect 10 0 5 0;
+#X connect 11 0 0 0;
+#X connect 13 0 1 0;
+#X connect 14 0 2 0;
+#X connect 16 0 3 0;
+#X connect 17 0 4 0;
+#X connect 20 0 26 0;
+#X connect 21 0 20 0;
+#X connect 23 0 25 0;
+#X connect 24 0 23 0;
+#X connect 32 0 36 0;
+#X connect 32 0 38 0;
+#X connect 34 0 32 0;
+#X connect 36 0 35 0;
+#X connect 38 0 37 0;
+#X restore 1109 67 pd timeline;
+#N canvas 696 380 397 332 objectsExplained 0;
+#X text 15 109 stereoSamplerRandomWalk: walks through the loaded samples
+(at least 2) in a random way and insert pauses (from 0 to the second
+argument). The first argument is the fade time;
+#X text 15 165 DrunkDroneStraight: creates a neverending loop walking
+back and forward the sample with a speed determined by the Inv Octave
+(2 means 2 octaves lower). Used for pads and sounds without sharp transients
+not to make the reversing too noticeable;
+#X text 15 238 polySamplerStereo: handles the polyphony and given a
+float list (just the first argument is used \, the second one was panning
+but I hav removed it) chooses a random sample from the loaded ones.
+;
+#X text 15 60 stereoSamplerAleatory: walks through the loaded samples
+(at least 2) in a random way despite the name. The argument is the
+fadeTime between samples;
+#X text 15 10 stereoSamplerX: walks through the loaded samples (at
+least 2) in a sequential. The argument is the fadeTime between samples
+;
+#X restore 895 51 pd objectsExplained;
+#X obj 54 495 r piano_v;
+#X obj 200 492 r chimes_v;
+#X obj 281 500 r mainPad_v;
+#X obj 367 499 r growthSamples_v;
+#X obj 390 527 line;
+#X obj 444 498 r randomNoises_v;
+#X obj 550 499 r chimesLow_v;
+#X obj 683 501 r linesPad_v;
+#X obj 126 379 r chimes_on;
+#X obj -19 337 r piano_on;
+#X obj 161 86 tgl 25 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 160 60 r mainPad_on;
+#X obj 319 269 tgl 25 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 318 243 r growthSamples_on;
+#X obj 945 110 tgl 25 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 944 84 r randomNoises_on;
+#X obj 931 299 tgl 25 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 930 273 r chimesLow_on;
+#X obj 531 256 tgl 25 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 530 230 r linesPad_on;
+#X obj 1532 792 r leavesOff;
+#X obj 50 785 loadbang;
+#X msg 186 813 0;
+#X obj 1625 780 loadbang;
+#X obj 1503 788 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1532 841 SingleShotStereo;
+#X msg 1625 806 Wind2.wav;
+#X obj 604 254 stereoSamplerX 7000;
+#X obj 605 174 loadbang;
+#X msg 1383 118 RollingBall1.wav \, RollingBall2.wav \, RollingBall3.wav
+\, ScratchingPotStereo.wav \, PianoPrep1.wav \, PianoPrep2.wav \, PianoPrep3.wav
+;
+#X obj 1356 700 r breath;
+#X obj 1087 780 loadbang;
+#X obj 965 788 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 994 841 SingleShotStereo;
+#X obj 994 792 r placeSeed;
+#X msg 1087 806 PlaceSeedStereo.wav;
+#X obj 1508 549 loadbang;
+#X obj 1341 486 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1430 507 r newLine;
+#X msg 1508 575 Line.wav;
+#X obj 1440 606 polySamplerStereo;
+#X msg 1436 572 1300 0;
+#X obj 261 199 hip~ 300;
+#X msg 242 55 PadLoganEdited.wav;
+#N canvas 549 255 1131 520 modulatingLine 0;
+#X obj 340 182 vline~;
+#X obj 433 253 *~;
+#X msg 340 161 \$1 200;
+#X obj 431 166 r~ linesR;
+#X obj 61 177 vline~;
+#X obj 154 248 *~;
+#X msg 61 156 \$1 200;
+#X obj 151 166 r~ linesL;
+#X text 746 193 reset;
+#X obj 822 253 vline~;
+#X obj 728 281 counter;
+#X obj 746 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 213 -2 r newLine;
+#X obj 205 27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 756 313 5 0 0 0 - - -;
+#X floatatom 790 405 5 0 0 0 - - -;
+#X obj 805 322 * 0.05;
+#X obj 176 59 t b b;
+#X obj 246 113 random 3000;
+#X obj 235 140 + 1000;
+#X obj 137 96 random 50;
+#X obj 126 123 + 50;
+#X obj 177 145 pack f f;
+#X obj 397 42 t b b;
+#X obj 467 96 random 3000;
+#X obj 456 123 + 1000;
+#X obj 358 79 random 50;
+#X obj 347 106 + 50;
+#X obj 398 128 pack f f;
+#X obj 130 284 outlet~;
+#X obj 409 289 outlet~;
+#X obj 134 214 vd~ linesDelL;
+#X obj 413 219 vd~ linesDelR;
+#X obj 522 323 vline~;
+#X msg 522 302 \$1 200;
+#X obj 148 189 delwrite~ linesDelL 44100;
+#X obj 477 191 delwrite~ linesDelR 44100;
+#X obj 737 225 r linesOff;
+#X obj 815 362 min 0.9;
+#X connect 0 0 32 0;
+#X connect 1 0 36 0;
+#X connect 2 0 0 0;
+#X connect 3 0 36 0;
+#X connect 4 0 31 0;
+#X connect 5 0 35 0;
+#X connect 6 0 4 0;
+#X connect 7 0 35 0;
+#X connect 10 0 14 0;
+#X connect 11 0 10 3;
+#X connect 12 0 13 0;
+#X connect 13 0 17 0;
+#X connect 13 0 23 0;
+#X connect 13 0 10 0;
+#X connect 14 0 16 0;
+#X connect 16 0 38 0;
+#X connect 17 0 20 0;
+#X connect 17 1 18 0;
+#X connect 18 0 19 0;
+#X connect 19 0 22 1;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 22 0 4 0;
+#X connect 23 0 26 0;
+#X connect 23 1 24 0;
+#X connect 24 0 25 0;
+#X connect 25 0 28 1;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 28 0 0 0;
+#X connect 31 0 5 0;
+#X connect 31 0 29 0;
+#X connect 32 0 1 0;
+#X connect 32 0 30 0;
+#X connect 33 0 1 1;
+#X connect 33 0 5 1;
+#X connect 34 0 33 0;
+#X connect 37 0 11 0;
+#X connect 38 0 15 0;
+#X connect 38 0 34 0;
+#X restore 628 451 pd modulatingLine;
+#X obj 644 406 s~ linesL;
+#X obj 757 399 s~ linesR;
+#X obj 1426 400 s newLine;
+#X obj 1412 354 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 1259 302 MoogBell1.wav \, MoogBell2.wav \, MoogBell3.wav \,
+MoogBell4.wav \, MoogBell5.wav \, MoogBell6.wav \, MoogBell7.wav;
+#X obj 507 410 *~ 0.7;
+#X obj 560 413 *~ 0.7;
+#N canvas 314 495 462 405 noiseSource 0;
+#X obj 188 76 metro 5000;
+#X obj 188 42 loadbang;
+#X obj 144 39 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 159 172 noise~;
+#X msg 219 175 \$1 2000;
+#X obj 224 103 random 3000;
+#X obj 219 203 line;
+#X obj 188 232 bp~ 200 100;
+#X obj 80 232 bp~ 200 100;
+#N canvas 0 22 450 300 noiseSource 0;
+#X restore 264 82 pd noiseSource;
+#X obj 106 308 outlet~;
+#X obj 219 310 outlet~;
+#X msg 98 171 \$1 2000;
+#X obj 98 199 line;
+#X obj 98 102 t b f;
+#X obj 98 146 -;
+#X obj 332 130 r newLine;
+#X text 335 189 amp envelope;
+#X obj 325 218 vline~;
+#X obj 108 260 *~;
+#X obj 216 260 *~;
+#X msg 99 124 8000;
+#X obj 219 150 + 8000;
+#X msg 305 168 0.1 1000 \, 0 0 1000;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 6 0;
+#X connect 5 0 14 0;
+#X connect 5 0 22 0;
+#X connect 6 0 7 1;
+#X connect 7 0 20 0;
+#X connect 8 0 19 0;
+#X connect 12 0 13 0;
+#X connect 13 0 8 1;
+#X connect 14 0 21 0;
+#X connect 14 1 15 1;
+#X connect 15 0 12 0;
+#X connect 16 0 23 0;
+#X connect 16 0 5 0;
+#X connect 18 0 19 1;
+#X connect 18 0 20 1;
+#X connect 19 0 10 0;
+#X connect 20 0 11 0;
+#X connect 21 0 15 0;
+#X connect 22 0 4 0;
+#X connect 23 0 18 0;
+#X restore 684 376 pd noiseSource;
+#X obj -82 164 r newLine;
+#X obj 626 298 *~ 0.3;
+#X obj 734 296 *~ 0.3;
+#X obj 1630 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X obj 1648 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X obj 1668 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X obj 1686 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X obj 1704 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X obj 1722 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X obj 1742 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X msg 1526 500 0.5;
+#X obj 1780 518 vsl 15 80 0 1 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 3950 1;
+#X text 1753 448 gain;
+#X obj 1524 476 loadbang;
+#X obj 1617 648 EQ7 -------------;
+#X obj 1732 648 EQ7 -------------;
+#X obj 1577 442 r eq100;
+#X obj 1608 452 r eq250;
+#X obj 1646 461 r eq700;
+#X obj 1675 466 r eq1500;
+#X obj 1703 476 r eq3000;
+#X obj 1728 484 r eq7000;
+#X obj 1748 443 r eq15000;
+#X obj 1765 467 r eqGain;
+#X msg 609 203 Lines1.wav \, Lines2.wav;
+#X obj 332 350 stereoSamplerRandomWalk 3000 4000;
+#X obj 1244 702 print breath;
+#X msg 423 291 Birds3.wav \, Random_constructed.wav \, HumanVoice1.wav
+\, Birds1.wav \, Birds2.wav;
+#X connect 0 0 21 0;
+#X connect 1 0 70 0;
+#X connect 4 0 153 0;
+#X connect 4 0 154 0;
+#X connect 6 0 4 0;
+#X connect 7 0 3 0;
+#X connect 8 0 153 0;
+#X connect 8 0 154 0;
+#X connect 9 0 153 0;
+#X connect 10 0 154 0;
+#X connect 11 0 8 0;
+#X connect 15 0 2 2;
+#X connect 19 0 39 0;
+#X connect 20 0 30 2;
+#X connect 21 0 70 1;
+#X connect 22 0 39 1;
+#X connect 23 0 129 0;
+#X connect 23 0 47 0;
+#X connect 24 0 33 0;
+#X connect 24 0 33 1;
+#X connect 25 0 26 0;
+#X connect 25 0 42 0;
+#X connect 26 0 24 0;
+#X connect 27 0 28 0;
+#X connect 27 0 49 0;
+#X connect 28 0 44 0;
+#X connect 29 0 166 0;
+#X connect 39 0 30 0;
+#X connect 39 1 30 1;
+#X connect 41 0 22 0;
+#X connect 42 0 24 1;
+#X connect 43 0 128 0;
+#X connect 44 0 34 0;
+#X connect 44 0 34 1;
+#X connect 47 0 43 1;
+#X connect 49 0 44 1;
+#X connect 51 0 31 2;
+#X connect 52 0 33 2;
+#X connect 53 0 34 2;
+#X connect 54 0 35 2;
+#X connect 55 0 54 0;
+#X connect 56 0 36 2;
+#X connect 57 0 56 0;
+#X connect 59 0 58 2;
+#X connect 60 0 59 0;
+#X connect 62 0 58 0;
+#X connect 62 1 58 1;
+#X connect 63 0 62 0;
+#X connect 64 0 36 0;
+#X connect 64 1 36 1;
+#X connect 65 0 64 0;
+#X connect 66 0 62 0;
+#X connect 67 0 64 0;
+#X connect 68 0 115 0;
+#X connect 69 0 135 0;
+#X connect 70 0 2 0;
+#X connect 70 1 2 1;
+#X connect 72 0 74 0;
+#X connect 72 1 74 1;
+#X connect 73 0 78 0;
+#X connect 75 0 74 2;
+#X connect 76 0 75 0;
+#X connect 78 0 72 1;
+#X connect 79 0 72 0;
+#X connect 82 0 81 2;
+#X connect 86 0 15 0;
+#X connect 87 0 20 0;
+#X connect 88 0 51 0;
+#X connect 89 0 90 0;
+#X connect 90 0 32 2;
+#X connect 91 0 52 0;
+#X connect 92 0 53 0;
+#X connect 93 0 82 0;
+#X connect 94 0 19 0;
+#X connect 95 0 1 0;
+#X connect 97 0 96 0;
+#X connect 98 0 164 0;
+#X connect 99 0 98 0;
+#X connect 101 0 100 0;
+#X connect 103 0 102 0;
+#X connect 104 0 113 0;
+#X connect 105 0 104 0;
+#X connect 106 0 111 0;
+#X connect 107 0 108 0;
+#X connect 108 0 30 2;
+#X connect 108 0 31 2;
+#X connect 108 0 32 2;
+#X connect 108 0 33 2;
+#X connect 108 0 34 2;
+#X connect 108 0 81 2;
+#X connect 109 0 112 0;
+#X connect 110 0 111 0;
+#X connect 111 0 74 0;
+#X connect 111 1 74 1;
+#X connect 112 0 111 1;
+#X connect 113 0 136 0;
+#X connect 113 0 140 0;
+#X connect 113 1 137 0;
+#X connect 113 1 141 0;
+#X connect 114 0 163 0;
+#X connect 115 0 64 1;
+#X connect 116 0 79 0;
+#X connect 116 0 165 0;
+#X connect 117 0 121 0;
+#X connect 118 0 119 0;
+#X connect 119 0 35 0;
+#X connect 119 1 35 1;
+#X connect 120 0 119 0;
+#X connect 121 0 119 1;
+#X connect 122 0 125 0;
+#X connect 123 0 127 0;
+#X connect 124 0 127 0;
+#X connect 125 0 126 1;
+#X connect 126 0 131 0;
+#X connect 126 1 132 0;
+#X connect 127 0 126 0;
+#X connect 128 0 31 0;
+#X connect 128 0 31 1;
+#X connect 129 0 43 0;
+#X connect 130 0 81 0;
+#X connect 130 1 81 1;
+#X connect 134 0 133 0;
+#X connect 135 0 62 1;
+#X connect 136 0 81 0;
+#X connect 137 0 81 1;
+#X connect 138 0 131 0;
+#X connect 138 1 132 0;
+#X connect 140 0 131 0;
+#X connect 141 0 132 0;
+#X connect 142 0 153 1;
+#X connect 142 0 154 1;
+#X connect 143 0 153 2;
+#X connect 143 0 154 2;
+#X connect 144 0 153 3;
+#X connect 144 0 154 3;
+#X connect 145 0 153 4;
+#X connect 145 0 154 4;
+#X connect 146 0 153 5;
+#X connect 146 0 154 5;
+#X connect 147 0 153 6;
+#X connect 147 0 154 6;
+#X connect 148 0 153 7;
+#X connect 148 0 154 7;
+#X connect 149 0 148 0;
+#X connect 149 0 147 0;
+#X connect 149 0 146 0;
+#X connect 149 0 145 0;
+#X connect 149 0 144 0;
+#X connect 149 0 143 0;
+#X connect 149 0 142 0;
+#X connect 149 0 150 0;
+#X connect 150 0 153 8;
+#X connect 150 0 154 8;
+#X connect 152 0 149 0;
+#X connect 153 0 5 0;
+#X connect 154 0 5 1;
+#X connect 155 0 142 0;
+#X connect 156 0 143 0;
+#X connect 157 0 144 0;
+#X connect 158 0 145 0;
+#X connect 159 0 146 0;
+#X connect 160 0 147 0;
+#X connect 161 0 148 0;
+#X connect 162 0 150 0;
+#X connect 163 0 113 1;
+#X connect 164 0 32 0;
+#X connect 164 0 32 1;
+#X connect 166 0 164 1;
